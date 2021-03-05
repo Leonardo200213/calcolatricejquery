@@ -1,28 +1,31 @@
 <html>
 
 <head>
-    <script type="text/javascript" src="script.js"></script>
-    <script src="jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-    <center>
-        <h2>Calcolatrice</h2>
-        <hr>Solo JavaScript<br>
-
-        <input type="text" id="calcolo" placeholder="Inserisci il calcolo">
-        <div id="b1">
-
-            <button type="button" onclick="loadDoc()">Calcola</button>
-        </div>
-
-        <br><br>
-        <hr><br>Javascript con Jquery
-        <div id="b2">
-            <button type="button" onclick="jquery()">Calcola</button>
-        </div>
+	<center>
+            <div>
+				<br>
+				<h1>Calcolatrice</h1>
+				<hr><br>
+				<h2>Javascript</h2>
+                    <input type="text" id="calcolo" placeholder="Inserisci il calcolo">
+                    <button type="button" id="java" onclick="javascript()">Calcola</button>
+                    <br><br>
+                    <div id="risultato"></div>
+            </div>
+			<br>
+          <div>
+                <h2>Jquery</h2>
+                <input type="text" id="calcoloq" name="calcoloq" placeholder="Inserisci il calcolo">
+                    <button type="button" id="jquery" onclick="jquery()">Calcola</button>
+                    <br>
+                    <div id="risultatoq"></div>
+          </div>
     </center>
 </body>
 
