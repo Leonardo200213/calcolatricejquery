@@ -14,12 +14,16 @@ function javascript() {
 
 
 function jquery() {
+	var dati = document.getElementById("calcolo").value;
     $(document).ready(function() {
         $.ajax({
-            url: "http://api.mathjs.org/v4/",
+            url: "http://api.mathjs.org/v4/?expr=" + dati,
             success: function(result) {
-                $("#b2").html(result);
-            }
+                $("#risultatoq").html("Risultato: " + result);
+            },
+			error: function() {
+				$("#risultatoq").html("Errore");
+			}
         });
     });
 }
