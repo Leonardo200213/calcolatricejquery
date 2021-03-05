@@ -1,6 +1,7 @@
 <html>
 
 <head>
+	<title>Calcolatrice GET</title>
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -10,7 +11,7 @@
 	<center>
             <div>
 				<br>
-				<h1>Calcolatrice</h1>
+				<h1>Calcolatrice GET</h1>
 				<hr><br>
 				<h2>Javascript</h2>
                     <input type="text" id="calcolo" placeholder="Inserisci il calcolo">
@@ -21,12 +22,18 @@
 			<br>
           <div>
                 <h2>Jquery</h2>
-                <input type="text" id="calcoloq" name="calcoloq" placeholder="Inserisci il calcolo">
+                <input type="text" id="calcoloq" placeholder="Inserisci il calcolo">
                     <button type="button" id="jquery" onclick="jquery()">Calcola</button>
                     <br>
                     <div id="risultatoq"></div>
           </div>
     </center>
+	<br><br><br><br><br><br>
+	<div align=right>
+		<form action="post.html">
+			<button type="submit">Versione POST &#8594;</button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		</form>
+	</div>
 </body>
 
 </html>
